@@ -1,0 +1,31 @@
+{
+  "name": "it-elective-express-neon-api",
+  "version": "1.0.0",
+  "description": "Express.js API with signup, email verification, login, and user-owned CRUD using Neon PostgreSQL.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "migrate": "node scripts/migrate.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "nodemailer": "^7.0.4",
+    "pg": "^8.16.0",
+    "zod": "^4.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "eslint": "^9.33.0",
+    "nodemon": "^3.1.10"
+  }
+}
+
